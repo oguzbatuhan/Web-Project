@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #e76f51;
+  --secondary-color: #2a9d8f;
+  --light-color: #f8f9fa;
+  --dark-color: #6c757d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  background-color: var(--light-color);
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Varela Round", serif;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0.7rem;
+  line-height: 1.3;
+}
