@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        grid-template-areas:
+          "header header header"
+          "sidebar content content"
+          "sidebar . ."
+          "box-1 box-1 box-1"
+          "footer footer footer";
+      }
+      .header {
+        grid-area: header;
+        background-color: red;
+        text-align: center;
+      }
+      .content {
+        grid-area: content;
+        background-color: pink;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: blue;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: red;
+        text-align: center;
+      }
+      .box-1 {
+        grid-area: box-1;
+        background-color: blueviolet;
+      }
+      .box-2 {
+        background-color: burlywood;
+      }
+      .box-3 {
+        background-color: cadetblue;
+      }
+      .header,
+      .sidebar,
+      .content,
+      .box-1,
+      .box-2,
+      .box-3,
+      .footer {
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Lorem, ipsum.</h1>
+      </header>
+      <section class="content">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
+          vero eaque obcaecati esse doloribus, mollitia rem est itaque ipsam
+          modi eum voluptates sapiente vel distinctio aliquam voluptatibus
+          dignissimos facere, ex autem similique. Incidunt magni placeat vel a
+          ratione ipsa cumque.
+        </p>
+      </section>
+      <section class="sidebar">
+        <h2>Lorem, ipsum.</h2>
+        <ul>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+      </section>
+      <div class="box-1">
+        <h3>box 1</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          corporis quaerat ipsam aut facilis accusamus perspiciatis, atque earum
+          labore quasi architecto excepturi aperiam dignissimos consectetur
+          blanditiis quia minima neque aliquid.
+        </p>
+      </div>
+      <div class="box-2">
+        <h3>box 2</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          corporis quaerat ipsam aut facilis accusamus perspiciatis, atque earum
+          labore quasi architecto excepturi aperiam dignissimos consectetur
+          blanditiis quia minima neque aliquid.
+        </p>
+      </div>
+      <div class="box-3">
+        <h3>box 3</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          corporis quaerat ipsam aut facilis accusamus perspiciatis, atque earum
+          labore quasi architecto excepturi aperiam dignissimos consectetur
+          blanditiis quia minima neque aliquid.
+        </p>
+      </div>
+      <footer class="footer">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </footer>
+    </div>
+  </body>
+</html>
