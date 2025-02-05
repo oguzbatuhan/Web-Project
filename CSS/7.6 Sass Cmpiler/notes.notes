@@ -1,0 +1,7 @@
+notes
+
+'npm init -y' package.json yukler
+
+'sass --watch sass:css' sass klasorundeki dosyalari derleyip css e aktarir.
+
+'npm run komut' comutu calistirir
