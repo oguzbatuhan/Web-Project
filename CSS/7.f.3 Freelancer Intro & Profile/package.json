@@ -1,0 +1,14 @@
+{
+  "name": "7.f.0-freelancer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch --style=compressed scss:./public/css",
+    "scss-2": "sass --watch --style=expanded scss:./public/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

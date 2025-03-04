@@ -1,0 +1,86 @@
+@use "variables";
+
+#about {
+  &-a {
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.2rem;
+
+      &__bio {
+        border: 1px solid variables.$light-color;
+        padding: 0.5rem;
+        border-radius: 3px;
+
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    img {
+      border: 1px solid variables.$light-color;
+      padding: 0.5rem;
+      border-radius: 3px;
+    }
+  }
+
+  &-b {
+    color: variables.$white-color;
+
+    .progress {
+      height: 20px;
+      background-color: variables.$medium-color;
+      border-radius: 10px;
+      margin-bottom: 0.8rem;
+
+      div {
+        height: 100%;
+        text-align: center;
+        background-color: variables.$primary-color;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  &-c {
+    .about-logo {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6rem;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+      }
+    }
+  }
+
+  &-d {
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      border: 1px solid variables.$medium-color;
+      border-radius: 5px;
+      padding: 0.5rem;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      padding-right: 0.5rem;
+      display: inline-block;
+    }
+  }
+}

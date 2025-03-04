@@ -1,0 +1,56 @@
+@use "variables";
+
+#contact {
+  &-a {
+    .form-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message"
+        "button button";
+
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .name {
+        grid-area: name;
+      }
+      .email {
+        grid-area: email;
+      }
+      .subject {
+        grid-area: subject;
+      }
+      .message {
+        grid-area: message;
+        height: 300px;
+      }
+      button {
+        grid-area: button;
+      }
+      .input {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+
+      div {
+        color: variables.$white-color;
+      }
+      div i,
+      div h3,
+      div p {
+        cursor: pointer;
+      }
+    }
+  }
+}

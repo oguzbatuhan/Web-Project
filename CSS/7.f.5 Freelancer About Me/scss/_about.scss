@@ -1,0 +1,45 @@
+@use "variables";
+
+#about {
+  &-a {
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.2rem;
+
+      &__bio {
+        border: 1px solid variables.$light-color;
+        padding: 0.5rem;
+        border-radius: 3px;
+
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    img {
+      border: 1px solid variables.$light-color;
+      padding: 0.5rem;
+      border-radius: 3px;
+    }
+  }
+
+  &-b {
+    color: variables.$white-color;
+
+    .progress {
+      height: 20px;
+      background-color: variables.$medium-color;
+      border-radius: 10px;
+      margin-bottom: 0.8rem;
+
+      div {
+        height: 100%;
+        text-align: center;
+        background-color: variables.$primary-color;
+        border-radius: 10px;
+      }
+    }
+  }
+}

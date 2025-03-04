@@ -1,0 +1,154 @@
+@use "variables";
+// tables and smaller
+@media (max-width: 768px) {
+  .lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.4rem;
+    word-spacing: 1.4px;
+  }
+
+  #header {
+    &__home {
+      height: 30rem;
+
+      .header-content {
+        padding-top: 7rem;
+
+        h1 {
+          font-size: 3rem;
+          line-height: 1;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+  #home__a .skills,
+  #home__b .profile,
+  #home__c .process,
+  #projects .container .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+// mobile
+@media (max-width: 576px) {
+  #home {
+    &__a {
+      .skills div {
+        border-bottom: 1px solid variables.$light-color;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &__c {
+      .process div {
+        border-bottom: 1px solid variables.$light-color;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    word-spacing: 1px;
+  }
+
+  #header {
+    &__home {
+      height: 10rem;
+      border-radius: 2px solid variables.$primary-color;
+      background-position: 20% 30%;
+
+      .header-content {
+        display: none;
+      }
+    }
+    &__inner {
+      height: 10rem;
+    }
+  }
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+  #home__a .skills,
+  #home__b .profile,
+  #home__c .process,
+  #projects .container .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+  #main-footer {
+    height: 8rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+
+      .social {
+        order: 1;
+      }
+      .copy {
+        padding-top: 1rem;
+        order: 2;
+      }
+    }
+  }
+  #about {
+    &-a {
+      .info {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-c {
+      .about-logo {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  #contact {
+    &-a {
+      .form-fields {
+        grid-template-areas:
+          "name"
+          "email"
+          "subject"
+          "phone"
+          "message"
+          "button";
+
+        .message {
+          height: 100px;
+        }
+      }
+    }
+    &-b {
+      .contact-info div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dashed variables.$white-color;
+        width: 100%;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

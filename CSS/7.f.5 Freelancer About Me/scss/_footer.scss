@@ -1,0 +1,54 @@
+@use "variables";
+
+#main-footer {
+  background-color: variables.$dark-color;
+  color: variables.$white-color;
+  height: 5.5rem;
+  border-top: 2px solid variables.$primary-color;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+
+    .social {
+      .fab {
+        margin-right: 1rem;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        text-align: center;
+        padding: 0.6rem;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      .fa {
+        &-instagram:hover {
+          background: #833ab4;
+          background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+          border-color: variables.$primary-color;
+        }
+      }
+      .fa {
+        &-twitter:hover {
+          background: #1da1f2;
+          background: linear-gradient(to right, #1da1f2, #009ffc);
+          border-color: variables.$primary-color;
+        }
+      }
+      .fa {
+        &-linkedin:hover {
+          background: #0a66c2;
+          border-color: variables.$primary-color;
+        }
+      }
+      .fa {
+        &-youtube:hover {
+          background: #e52d27;
+          background: linear-gradient(to right, #e52d27, #b31217);
+          border-color: variables.$primary-color;
+        }
+      }
+    }
+  }
+}
