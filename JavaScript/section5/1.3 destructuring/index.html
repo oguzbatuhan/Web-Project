@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let urun = {
+        marka: "Samsung",
+        model: "S21FE",
+      };
+
+      function urungoster(obj) {
+        let { marka, model, fiyat = 0, satisdurumu = false } = obj;
+        console.log(marka, model, fiyat, satisdurumu);
+      }
+
+      urungoster(urun);
+    </script>
+  </body>
+</html>

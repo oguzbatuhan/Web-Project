@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const ogrenciler = new Map();
+
+      ogrenciler.set(556, "user-1"); // keys and value
+      ogrenciler.set("keys", "user-2"); // keys: boolean, str, int
+      ogrenciler.set(true, ["user-3", "Antalya"]); // keys and value, value...
+
+      for (let [keys, value] of ogrenciler) {
+        console.log(keys + " " + value);
+      }
+
+      ogrenciler.delete(845);
+
+      console.log(ogrenciler.size);
+      console.log(ogrenciler);
+    </script>
+  </body>
+</html>

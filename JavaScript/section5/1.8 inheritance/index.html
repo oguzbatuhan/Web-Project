@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // parent
+      class kisi {
+        constructor(ad, doğumYili) {
+          this.ad = ad;
+          this.doğumYili = doğumYili;
+        }
+        yaşHesapla() {
+          return new Date().getFullYear() - this.doğumYili;
+        }
+        kendiniTanit() {
+          return `Benim adim ${this.ad}`;
+        }
+      }
+
+      // child
+      class ogrenci extends kisi {
+        constructor(ad, doğumYili, ogrenciNo) {
+          super(ad, doğumYili); // miras alma
+          this.ogrenciNo = ogrenciNo;
+        }
+        kendiniTanit() {
+          return `Benim adim ${this.ad} ve okul numaram ${this.ogrenciNo}`;
+        }
+      }
+
+      let kisi1 = new kisi("user-1", 2001);
+      let ogrenci1 = new ogrenci("user-2", 2005, 490);
+
+      console.log(kisi1);
+      console.log(kisi1.yaşHesapla());
+      console.log(kisi1.kendiniTanit());
+      console.log(ogrenci1);
+      console.log(ogrenci1.yaşHesapla());
+      console.log(ogrenci1.kendiniTanit());
+    </script>
+  </body>
+</html>

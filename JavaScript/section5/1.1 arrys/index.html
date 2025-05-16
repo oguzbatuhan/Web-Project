@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const sayilar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+      // const tekÇift = function (sayilar) {
+      //   const teksayilar = [];
+      //   const çiftsayilar = [];
+      //   for (let sayi of sayilar) {
+      //     if (sayi % 2 == 1) {
+      //       teksayilar.push(sayi);
+      //     } else {
+      //       çiftsayilar.push(sayi);
+      //     }
+      //   }
+      //   console.log("Tek Sayılar: " + teksayilar);
+      //   console.log("Çift Sayılar: " + çiftsayilar);
+      // };
+      // tekÇift(sayilar);
+
+      const tekSayiKontrol = (sayi) => sayi % 2 == 1;
+      const çiftSayiKontrol = (sayi) => sayi % 2 == 0;
+      const üçeTamBölünenler = (sayi) => sayi % 3 == 0;
+
+      const tekSayilar = sayilar.filter(tekSayiKontrol);
+      console.log(tekSayilar);
+
+      const çiftSayilar = sayilar.filter(çiftSayiKontrol);
+      console.log(çiftSayilar);
+
+      const üç = sayilar.map(üçeTamBölünenler); // map = true, false
+      console.log(üç);
+    </script>
+  </body>
+</html>

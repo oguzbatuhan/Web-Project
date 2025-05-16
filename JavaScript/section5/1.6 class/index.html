@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function concructor
+      function kişiES5(name, colleague, oldYear) {
+        this.name = name;
+        this.colleague = colleague;
+        this.oldYear = oldYear;
+      }
+      kişiES5.prototype.yasHesapla = function () {
+        return new Date().getFullYear() - this.oldYear;
+      };
+
+      let sarah = new kişiES5("sarah", "programer", "2001");
+      let jenifer = new kişiES5("jenifer", "web devolopment", "2003");
+
+      console.log(sarah.name + " " + sarah.yasHesapla());
+      console.log(jenifer.name + " " + jenifer.yasHesapla());
+
+      // class
+      class kişiES6 {
+        constructor(name, colleague, oldYear) {
+          this.name = name;
+          this.colleague = colleague;
+          this.oldYear = oldYear;
+        }
+        yasHesapla() {
+          return new Date().getFullYear() - this.oldYear;
+        }
+      }
+
+      let creaper = new kişiES6("creaper", "boom", "2011");
+      let endermen = new kişiES6("endermen", "hidden", "2011");
+
+      console.log(creaper.name + " " + creaper.yasHesapla());
+      console.log(endermen.name + " " + endermen.yasHesapla());
+    </script>
+  </body>
+</html>

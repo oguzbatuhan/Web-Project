@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // es5
+      var selamlama = function (text) {
+        return "Merhaba " + text;
+      };
+      console.log(selamlama("Es5"));
+
+      var toplama = function (a, b) {
+        return Number(a) + Number(b);
+      };
+      console.log(toplama("10", "5"));
+
+      // es6
+      const selamlamaEs6 = (text) => "selam " + text;
+      console.log(selamlamaEs6("Es6"));
+
+      const toplamaEs6 = (a, b) => Number(a) + Number(b);
+      console.log(toplamaEs6("20", "5"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const msj = ["benim", "adim", "user", "1"];
+
+      let sonuc = "";
+      for (let x of msj) {
+        sonuc += x;
+        sonuc += " ";
+      }
+      console.log(sonuc);
+
+      console.log(...msj);
+
+      const dizi1 = ["1", "2"];
+      const dizi2 = ["3", "4"];
+      const dizi3 = [...dizi1, ...dizi2];
+      console.log(dizi3);
+
+      function toplam(...args) {
+        let sonuc = 0;
+        for (let sayi of args) {
+          sonuc += sayi;
+        }
+        return sonuc;
+      }
+      console.log(toplam(1, 4, 10));
+      console.log(toplam(1, 4, 10, 50, 100));
+    </script>
+  </body>
+</html>

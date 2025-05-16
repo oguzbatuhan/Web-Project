@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class kişi {
+        constructor(ad, meslek, doğumYili) {
+          this.ad = ad;
+          this.meslek = meslek;
+          this.doğumYili = doğumYili;
+        }
+        yasHesapla() {
+          return new Date().getFullYear() - this.doğumYili;
+        }
+
+        // ad
+        get ad() {
+          return this._ad;
+        }
+        set ad(value) {
+          if (value.length <= 3 || value.length >= 15) {
+            console.log("ad en az 3, en fazla 15 karakterden oluşmali.");
+            return;
+          }
+          this._ad = value;
+        }
+
+        // doğum yılı
+        get doğumYili() {
+          return this._doğumYili;
+        }
+        set doğumYili(value) {
+          if (
+            value > new Date().getFullYear() ||
+            value < new Date().getFullYear() - 100
+          ) {
+            let yil = new Date().getFullYear();
+            let fark = yil - 100;
+            console.log(
+              "doğum yili " +
+                fark +
+                " den büyük " +
+                yil +
+                " den küçük yada eşit olmali."
+            );
+            return;
+          }
+          this._doğumYili = value;
+        }
+      }
+
+      let creaper = new kişi("creaper", "boom", "1925");
+
+      console.log(creaper);
+      console.log(creaper.yasHesapla());
+    </script>
+  </body>
+</html>
