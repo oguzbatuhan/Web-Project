@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(45deg, #f9d616, #062b5b); */
+  background-color: black;
+  color: white;
+}
+.container {
+  width: 350px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  background-color: rgb(48, 189, 255);
+}
+
+.music-body {
+  padding: 0px 10px 10px 10px;
+}
+
+/* #controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+} */
+#controls #play {
+  width: 20px;
+  text-align: center;
+}
+#volume {
+  width: 20px;
+  text-align: left;
+}
+
+#controls i {
+  font-size: 20px;
+  color: white;
+  margin-right: 20px;
+  transition: all 0.8s ease;
+}
+#controls i:hover {
+  color: #f9d616;
+}
+
+#progress {
+  margin: 10px 0 10px 0;
+}
+
+#progress .progress-bar {
+  width: 100%;
+}
+
+#progress .times,
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#progress .times .curent-time {
+}
+
+#progress .times .duration {
+}
+
+#music-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
