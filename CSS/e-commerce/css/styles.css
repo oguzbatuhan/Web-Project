@@ -22,3 +22,9 @@
 .btn-light i {
   color: var(--primary);
 }
+
+a,
+span,
+i {
+  cursor: pointer;
+}
