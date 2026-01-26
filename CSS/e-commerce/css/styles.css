@@ -28,3 +28,19 @@ span,
 i {
   cursor: pointer;
 }
+
+.slider_nav {
+  max-height: 250px;
+}
+
+@media (min-width: 1200px) {
+  .slider_nav {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .slider_nav {
+    max-height: 350px;
+  }
+}
