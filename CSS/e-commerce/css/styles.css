@@ -44,3 +44,37 @@ i {
     max-height: 350px;
   }
 }
+
+.img-wrap {
+  position: relative;
+  padding: 1.5rem;
+}
+
+.img-wrap .badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.info-wrap {
+  padding: 0.5rem;
+}
+
+.info-wrap .title {
+  display: block;
+  text-decoration: none;
+  color: #212529;
+}
+
+.price-wrap .price-discount {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.price-wrap .price {
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-decoration: line-through;
+}
