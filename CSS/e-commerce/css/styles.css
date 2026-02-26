@@ -23,6 +23,11 @@
   color: var(--primary);
 }
 
+.navbar-brand a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
 a,
 span,
 i {
@@ -91,7 +96,21 @@ i {
   object-fit: cover;
 }
 
-main .card:hover {
+.producks .card:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
+}
+
+.breadcrumb a {
+  color: white;
+  opacity: 0.8;
+}
+
+.breadcrumb .breadcrumb-item {
+  color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
+  opacity: 0.8;
 }
