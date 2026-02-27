@@ -102,8 +102,13 @@ i {
 }
 
 .breadcrumb a {
+  text-decoration: none;
   color: white;
   opacity: 0.8;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
 }
 
 .breadcrumb .breadcrumb-item {
@@ -113,4 +118,41 @@ i {
 .breadcrumb-item + .breadcrumb-item::before {
   color: white;
   opacity: 0.8;
+}
+
+/* gallery */
+.gallery-wrap .img-big-wrap {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.gallery-wrap .img-big-wrap img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.gallery-wrap .thumbs-wrap {
+  text-align: center;
+}
+
+.gallery-wrap .thumbs-wrap a {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #dde2e6;
+  border-radius: 0.4rem;
+  margin: 3px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.gallery-wrap .thumbs-wrap img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
 }
