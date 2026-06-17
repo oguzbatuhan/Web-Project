@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Kategori ekle</title>
+    <title>Ürün Ekle</title>
   </head>
   <body>
     <header class="">
@@ -41,10 +41,10 @@
           <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="kategori.html" class="nav-link active">Kategori</a>
+                <a href="kategori.html" class="nav-link">Kategori</a>
               </li>
               <li class="nav-item">
-                <a href="urun.html" class="nav-link">Ürünler</a>
+                <a href="urun.html" class="nav-link active">Ürünler</a>
               </li>
               <li class="nav-item">
                 <a href="slider.html" class="nav-link">Slider</a>
@@ -86,13 +86,13 @@
 
     <main class="container my-3">
       <div class="row">
-        <div class="col">
+        <div class="col-md-9">
           <div class="card shadow">
             <div
               class="card-header py-1 d-flex justify-content-between align-item-center"
             >
-              <h5 class="card-title">Kategori Ekle</h5>
-              <a href="kategori.html" class="btn btn-sm btn-primary">
+              <h5 class="card-title">Ürün Ekle</h5>
+              <a href="urun.html" class="btn btn-sm btn-primary">
                 <i class="fa-solid fa-list"></i>
               </a>
             </div>
@@ -100,20 +100,72 @@
               <form>
                 <div class="row mb-3">
                   <label for="kategoriAdi" class="col-sm-2 col-form-label"
-                    >Kategori adı</label
+                    >Ürün adı</label
                   >
                   <div class="col-sm-10">
-                    <input type="text" id="kategoriAdi" class="form-control" />
+                    <input type="text" id="urunadi" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="kategoriUrl" class="col-sm-2 col-form-label"
-                    >URL</label
+                  <label for="urunAçiiklama" class="col-sm-2 col-form-label"
+                    >Ürün açıklaması</label
                   >
                   <div class="col-sm-10">
-                    <input type="text" id="kategoriUrl" class="form-control" />
+                    <textarea
+                      id="urunAçiiklama"
+                      class="form-control"
+                      rows="3"
+                    ></textarea>
                   </div>
                 </div>
+                <div class="row mb-3">
+                  <label for="urunFiyat" class="col-sm-2 col-form-label"
+                    >Ürün Fiyatı</label
+                  >
+                  <div class="col-sm-10">
+                    <input type="text" id="urunFiyat" class="form-control" />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="urunAktif" class="col-sm-2 col-form-label"
+                    >Aktif</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="checkbox"
+                      id="urunAktif"
+                      class="form-check-input"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="urunAnasayfa" class="col-sm-2 col-form-label"
+                    >Anasayfa</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="checkbox"
+                      id="urunAnasayfa"
+                      class="form-check-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="urunKategori" class="col-sm-2 col-form-label"
+                    >Kategori</label
+                  >
+                  <div class="col-sm-10">
+                    <select class="form-select">
+                      <option value="" selected>Seçiniz</option>
+                      <option value="1" selected>Telefon</option>
+                      <option value="2" selected>Bilgisayar</option>
+                      <option value="3" selected>Aksesuar</option>
+                      <option value="4" selected>Kulaklık</option>
+                    </select>
+                  </div>
+                </div>
+
                 <div class="row mb-3">
                   <div class="offset-sm-2">
                     <button type="submit" class="btn btn-primary">
@@ -122,6 +174,14 @@
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <img src="img/1.jpeg" class="img-thumbnail" alt="" />
+              <input type="file" class="form-control mt-3" />
             </div>
           </div>
         </div>
