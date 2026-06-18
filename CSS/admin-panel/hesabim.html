@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Slider</title>
+    <title>Hesabım</title>
   </head>
   <body>
     <header class="">
@@ -47,7 +47,7 @@
                 <a href="urun.html" class="nav-link">Ürünler</a>
               </li>
               <li class="nav-item">
-                <a href="slider.html" class="nav-link active">Slider</a>
+                <a href="slider.html" class="nav-link">Slider</a>
               </li>
               <li class="nav-item">
                 <a href="role.html" class="nav-link">Role</a>
@@ -69,7 +69,9 @@
                 >
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="hesabim.html" class="dropdown-item">Hesabım</a>
+                    <a href="hesabim.html" class="dropdown-item active"
+                      >Hesabım</a
+                    >
                   </li>
                   <li><a href="login.html" class="dropdown-item">Çıkış</a></li>
                 </ul>
@@ -86,88 +88,86 @@
       </nav>
     </header>
 
-    <main class="container my-3">
+    <main class="container my-3 wh-100">
       <div class="row">
-        <div class="col">
+        <div class="col-md-3">
           <div class="card shadow">
-            <div
-              class="card-header py-1 d-flex justify-content-between align-item-center"
-            >
-              <h5 class="card-title">Sliderlar</h5>
-              <a href="slider-ekle.html" class="btn btn-sm btn-primary">
-                <i class="fa-solid fa-plus"></i>
-              </a>
+            <div class="card-body">
+              <img src="img/user.png" class="img-thumbnail" />
+              <input type="file" class="form-control mt-3" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card shadow mb-3">
+            <div class="card-header py-1">
+              <h5 class="card-title">Kullanıcı Bilgileri</h5>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table
-                  class="table table-bordered table-hover table-striped mb-0"
-                >
-                  <thead class="table-secondary">
-                    <tr>
-                      <th style="width: 20px">Id</th>
-                      <th style="width: 200px">İmage</th>
-                      <th>Başlık</th>
-                      <th>State</th>
-                      <th>İndex</th>
-                      <th style="width: 50px"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td><img src="img/slider-1.jpeg" class="img-fluid" /></td>
-                      <td>Slider 1</td>
-                      <td>
-                        <i class="fa-solid fa-circle-check text-success"></i>
-                      </td>
-                      <td>1</td>
-                      <td>
-                        <a
-                          href="slider-ekle.html"
-                          class="btn btn-primary btn-sm"
-                        >
-                          <i class="fa-solid fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td><img src="img/slider-2.jpeg" class="img-fluid" /></td>
-                      <td>Slider 2</td>
-                      <td>
-                        <i class="fa-solid fa-circle-check text-success"></i>
-                      </td>
-                      <td>2</td>
-                      <td>
-                        <a
-                          href="slider-ekle.html"
-                          class="btn btn-primary btn-sm"
-                        >
-                          <i class="fa-solid fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td><img src="img/slider-3.jpeg" class="img-fluid" /></td>
-                      <td>Slider 3</td>
-                      <td>
-                        <i class="fa-solid fa-circle-check text-success"></i>
-                      </td>
-                      <td>3</td>
-                      <td>
-                        <a
-                          href="slider-ekle.html"
-                          class="btn btn-primary btn-sm"
-                        >
-                          <i class="fa-solid fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <form>
+                <div class="row mb-3">
+                  <label for="username" class="col-sm-2 col-form-label"
+                    >Username</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      id="username"
+                      class="form-control"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="adSoyad" class="col-sm-2 col-form-label"
+                    >Ad Soyad</label
+                  >
+                  <div class="col-sm-10">
+                    <input type="text" id="adSoyad" class="form-control" />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="email" class="col-sm-2 col-form-label"
+                    >E-posta</label
+                  >
+                  <div class="col-sm-10">
+                    <input type="email" id="email" class="form-control" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary offset-sm-2">
+                  Güncelle
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="card shadow">
+            <div class="card-header py-1">
+              <h5 class="card-title">Parola Güncelle</h5>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="password" class="col-sm-2 col-form-label"
+                    >Parola</label
+                  >
+                  <div class="col-sm-10">
+                    <input type="password" id="password" class="form-control" />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="password" class="col-sm-2 col-form-label"
+                    >Parola Tekrar</label
+                  >
+                  <div class="col-sm-10">
+                    <input type="password" id="password" class="form-control" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary offset-sm-2">
+                  Güncelle
+                </button>
+              </form>
             </div>
           </div>
         </div>
